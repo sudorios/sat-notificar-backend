@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 80px 0 0;
+            padding: 0;
+            font-family: 'Prompt', sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            height: 100%;
+            width: 100%;
+            background-color: #FFFFFF;
+            -webkit-print-color-adjust: exact !important;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
+            border-collapse: collapse;
+            border-spacing: 0;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .header {
+            background-color: #FFFFFF;
+            padding: 5px 0;
+						margin: 0 auto;
+            text-align: center;
+        }
+
+        .header img {
+            max-width: 100%;
+        }
+
+        .content {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 25px;
+            color: #739D13;
+            margin: 0;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #59595C;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0090d4;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-top: 15px;
+        }
+
+        .footer {
+            background-color: #8BB53C;
+            padding: 30px 0;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.ibb.co/nQvvgpb/logo-identicard-svg.png" alt="IDENTICARD Logo">
+        </div>
+        <div class="content">
+            <h2>Estimado(a): <strong>${nombreCompleto}</strong></h2>
+            <p>Nos complace informarle que su cuenta ha sido activada con éxito. ¡Bienvenido/a a la comunidad de IDENTICARD!</p>
+            <h2>Usuario:${usuario}</h2>
+            <p>Haga click en el siguiente botón para acceder a la aplicación.</p>
+            <a class="button" href="${urlBase}">Ir a la aplicación</a>
+        </div>
+        <div class="footer">
+            <p>© 2024 IDENTICARD. Todos los derechos reservados</p>
+        </div>
+    </div>
+</body>
+</html>
