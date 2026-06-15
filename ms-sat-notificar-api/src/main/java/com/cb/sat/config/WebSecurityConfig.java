@@ -33,7 +33,7 @@ public class WebSecurityConfig {
 	private static final String[] AUTH_WHITELIST = { "/configuration/ui", "/webjars/**", "/swagger-ui/**",
 			"/swagger-resources", "/configuration/security", "/v3/api-docs/**", "/api/web/**" };
 
-	private static final String[] URL_ACCESS = { "http://localhost:4200","http://localhost:5173","http://13.140.161.186",
+	private static final String[] URL_ACCESS = { "http://localhost:4200","http://localhost:5173","http://13.140.161.186","https://satyfast.vercel.app",
 			"http://ec2-3-134-227-179.us-east-2.compute.amazonaws.com",
 			"http://ec2-18-222-140-59.us-east-2.compute.amazonaws.com",
 			"http://ec2-3-147-0-234.us-east-2.compute.amazonaws.com",
